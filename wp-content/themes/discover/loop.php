@@ -38,7 +38,7 @@
  	<?php if ( has_post_thumbnail() ) { the_post_thumbnail(array(620,240), array("class" => "alignleft post_thumbnail")); } ?>
 	
 	
-			<?php the_content( __( '<span class="read-more">Read More</span>', 'discover' ) ); ?>
+			<?php the_excerpt( __( '<span class="read-more">Read More</span>', 'discover' ) ); ?>
 			<div class="clear"></div>
 			<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'discover' ), 'after' => '' ) ); ?>
 	<?php endif; ?>
